@@ -5,4 +5,6 @@ Challenges generated and verified using the prompts in .github\prompts (you can 
 The goal is to solve these challenges WITHOUT the use of any AI assisted tools.
 
 Log: 
-Challenge [001] — Arena Allocator from Scratch
+- [001] Arena Allocator from Scratch
+- [002] Treiber Lock-Free Stack
+- [003] AES-GCM: Implement AEAD and Prove Nonce Reuse Is Fatal
