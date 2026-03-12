@@ -1,2 +1,5 @@
 .vscode
 *.exe
+.venv/
+# ignore main executable 
+main 
