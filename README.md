@@ -10,3 +10,4 @@ Log:
 - [003] AES-GCM: Implement AEAD and Prove Nonce Reuse Is Fatal
 - [004] DNS Query from Scratch
 - [005] GDB Python Pretty-Printer for a Tagged Union
+- [006] Minimal epoll Reactor in C
