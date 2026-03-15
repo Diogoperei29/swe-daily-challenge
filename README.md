@@ -11,3 +11,4 @@ Log:
 - [004] DNS Query from Scratch
 - [005] GDB Python Pretty-Printer for a Tagged Union
 - [006] Minimal epoll Reactor in C
+- [007] JIT: Emit and Execute x86-64 Machine Code at Runtime
