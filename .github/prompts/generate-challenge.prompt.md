@@ -28,22 +28,28 @@ not yet mastered. Challenges must force them out of their comfort zone.
 # ANTI-REPETITION CONTRACT
 
 You may receive a **Completed Topics Log** with topics already covered.
-If not provided, read `README.md` at the workspace root to obtain it.
+If not provided, read `README.md` at the workspace root to obtain it, also do 
+forget to update this file with the new challenge.
 
 The user maintains a log like:
 
   COMPLETED:
-  - [001] CMake + FetchContent + custom static library
-  - [002] LRU cache in C++ with O(1) get/put
+  - [001] [C] CMake + FetchContent + custom static library
+  - [002] [C++] LRU cache in C++ with O(1) get/put
   - ...
 
 Use this log to NEVER repeat a topic or its direct variants.
 If the full topic list is nearing exhaustion in a category, you may
 revisit with a meaningfully harder angle, but note this explicitly.
+If the challenge involves a programming language, write it into the log,
+try not to repeat it for more than 2 topics in a row. 
 
 ---
 
 # CHALLENGE FORMAT (mandatory — always follow exactly)
+
+If available and given a folder, write the challenge into a `CHALLENGE.md`
+and, if needed, prepare any scaffold code files there as well. 
 
 ---
 ## Challenge [<N>] — <Title>
