@@ -14,3 +14,4 @@ Log:
 - [007] [C] JIT: Emit and Execute x86-64 Machine Code at Runtime
 - [008] [C++] LSM-Tree: MemTable, SSTable Flush, and Point Queries
 - [009] [C] Stackful Coroutines via ucontext_t
+- [010] [C++] HMAC Length Extension: Exploit and Fix a Naive MAC
