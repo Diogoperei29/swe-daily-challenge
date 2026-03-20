@@ -42,7 +42,7 @@ Use this log to NEVER repeat a topic or its direct variants.
 If the full topic list is nearing exhaustion in a category, you may
 revisit with a meaningfully harder angle, but note this explicitly.
 If the challenge involves a programming language, write it into the log,
-try not to repeat it for more than 2 topics in a row. 
+try not to repeat it for more than 2 topics in the last 4 topics.
 
 ---
 
