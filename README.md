@@ -16,3 +16,4 @@ Log:
 - [009] [C] Stackful Coroutines via ucontext_t
 - [010] [C++] HMAC Length Extension: Exploit and Fix a Naive MAC
 - [011] [C++] Bloom Filter: Probabilistic Set Membership with Tunable FPR
+- [012] [C] ELF64 Binary Inspector: Parse Sections, Segments, and Symbols with mmap
