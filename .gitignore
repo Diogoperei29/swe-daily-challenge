@@ -1,5 +1,27 @@
-.vscode
-*.exe
+# Editor
+.vscode/
+
+# Python virtual environments
 .venv/
-# ignore main executable 
-main 
+
+# C/C++ build artifacts
+*.o
+*.a
+*.so
+*.out
+*.exe
+*.d
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Rust / Cargo
+target/
+Cargo.lock
+
+# Compiled binaries
+main

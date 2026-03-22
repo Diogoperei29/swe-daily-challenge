@@ -1,0 +1,21 @@
+use ring_buffer::RingBuffer;
+
+fn main() {
+    let mut rb: RingBuffer<String> = RingBuffer::new(4);
+
+    rb.push("alpha".into()).unwrap();
+    rb.push("beta".into()).unwrap();
+    rb.push("gamma".into()).unwrap();
+
+    println!("{:?}", rb.pop()); // Some("alpha")
+    println!("{:?}", rb.pop()); // Some("beta")
+
+    rb.push("delta".into()).unwrap();
+    rb.push("epsilon".into()).unwrap();
+    assert!(rb.push("zeta".into()).is_err()); // full → Err
+
+    while let Some(s) = rb.pop() {
+        println!("{s}"); // gamma, delta, epsilon
+    }
+    println!("{:?}", rb.pop()); // None
+}

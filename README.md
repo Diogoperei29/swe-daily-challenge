@@ -17,3 +17,4 @@ Log:
 - [010] [C++] HMAC Length Extension: Exploit and Fix a Naive MAC
 - [011] [C++] Bloom Filter: Probabilistic Set Membership with Tunable FPR
 - [012] [C] ELF64 Binary Inspector: Parse Sections, Segments, and Symbols with mmap
+- [013] [Rust] Unsafe Rust: Heap-Allocated Ring Buffer with Raw Pointers
