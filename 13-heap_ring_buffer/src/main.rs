@@ -12,10 +12,11 @@ fn main() {
 
     rb.push("delta".into()).unwrap();
     rb.push("epsilon".into()).unwrap();
-    assert!(rb.push("zeta".into()).is_err()); // full → Err
+    rb.push("zeta".into()).unwrap();    
+    assert!(rb.push("omega".into()).is_err()); // now full → Err
 
     while let Some(s) = rb.pop() {
-        println!("{s}"); // gamma, delta, epsilon
+        println!("{s}"); // gamma, delta, epsilon, zeta
     }
     println!("{:?}", rb.pop()); // None
 }

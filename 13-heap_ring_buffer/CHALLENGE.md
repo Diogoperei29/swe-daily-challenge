@@ -71,10 +71,11 @@ fn main() {
 
     rb.push("delta".into()).unwrap();
     rb.push("epsilon".into()).unwrap();
-    assert!(rb.push("zeta".into()).is_err()); // full → Err
+    rb.push("zeta".into()).unwrap();
+    assert!(rb.push("omega".into()).is_err()); // now full → Err
 
     while let Some(s) = rb.pop() {
-        println!("{s}"); // gamma, delta, epsilon
+        println!("{s}"); // gamma, delta, epsilon, zeta
     }
     println!("{:?}", rb.pop()); // None
 }
@@ -253,7 +254,7 @@ If you skip step 1: every `String`, `Vec`, `Box`, or other owned `T` in the buff
 
 ### Completion Criteria
 1. `cargo build` on stable Rust produces **zero warnings** in both debug and `--release` profiles.
-2. `cargo run` produces the expected output exactly: `Some("alpha")`, `Some("beta")`, then `gamma`, `delta`, `epsilon` on separate lines, then `None`.
+2. `cargo run` produces the expected output exactly: `Some("alpha")`, `Some("beta")`, then `gamma`, `delta`, `epsilon`, `zeta` on separate lines, then `None`.
 3. Every `unsafe` block in `src/lib.rs` is preceded by a `// SAFETY:` comment that identifies the invariant making it sound.
 4. The `Drop` implementation correctly drops all live `T` values and then deallocates the backing buffer (verify by wrapping a counter in a newtype that prints on drop — confirm the count matches the number of pushed-but-not-popped elements).
 5. `unsafe impl Send` and `unsafe impl Sync` are present, each with a comment stating why they are sound.
